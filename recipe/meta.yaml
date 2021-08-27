@@ -1,4 +1,4 @@
-{% set name = "lcls2-epix-hr-pcie-feedstock" %}
+{% set name = "lcls2-epix-hr-pcie" %}
 {% set version = "1.1.0" %}
 
 package:
