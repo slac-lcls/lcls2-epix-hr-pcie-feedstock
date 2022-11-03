@@ -1,5 +1,5 @@
 {% set name = "lcls2-epix-hr-pcie" %}
-{% set version = "1.2.0" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url:  https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f56d1bfe7509038f93b409e38f3d174eaf081d64708eae7a5157f6d129b4fbe
+  sha256: 2de1f21e394792b2f2b6042814cc8fef29f7a71a964d55d8ba9f32e0a99dc511
 
 build:
   skip: True  # [win or osx]
   noarch: python
-  number: 10
+  number: 0
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
