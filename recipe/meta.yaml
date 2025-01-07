@@ -1,13 +1,13 @@
 {% set name = "lcls2-epix-hr-pcie" %}
-{% set version = "1.4.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url:  https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
-  sha256: 2de1f21e394792b2f2b6042814cc8fef29f7a71a964d55d8ba9f32e0a99dc511
+  url: file:///sdf/group/lcls/ds/ana/sw/source_files/{{ name }}-{{ version }}.tar.gz
+  sha256: 581e3058c6dd52aed46df7628012a9c0fd6f533a2b34875fa1f8e2345f77c0fc
 
 build:
   skip: True  # [win or osx]
@@ -25,7 +25,7 @@ requirements:
     - python
 
 about:
-  home: https://github.com/slaclab/lcls2-epix-hr-pcie 
+  home: https://github.com/slaclab/lcls2-epix-hr-pcie
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
